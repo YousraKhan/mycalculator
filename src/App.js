@@ -7,7 +7,7 @@ class App extends React.Component {
     constructor() {
         super()
         this.state = {
-            value1: '',
+            value1: ' ',
             value2: '',
             operation: '',
             result: null
