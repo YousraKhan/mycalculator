@@ -34,13 +34,13 @@ class App extends React.Component {
 
     onInputChange = (event) => {
         if (event.target.id === 'value1') {
-            console.log(event.target.value);
+           // console.log(event.target.value);
             this.setState({ value1: event.target.value })
 
         }
         else if (event.target.id === 'value2') {
 
-            console.log(event.target.value);
+            // console.log(event.target.value);
             this.setState({ value2: event.target.value })
         }
 
@@ -91,27 +91,27 @@ class App extends React.Component {
         {
             n3 = (Number(this.state.value1)) + (Number(this.state.value2));
 
-            console.log(event.target.value);
+            // console.log(event.target.value);
     
-            console.log(n3);
+         //   console.log(n3);
             this.setState({ result: n3, operation: '+' })
         }
         else if (event.target.value === 'Sub')
         {
             n3 = (Number(this.state.value1)) - (Number(this.state.value2));
-            console.log(n3);
+            // console.log(n3);
             this.setState({ result: n3, operation: '-' })
         }
         else if (event.target.value === 'Div')
         {
             n3 = (Number(this.state.value1)) / (Number(this.state.value2));
-            console.log(n3);
+           // console.log(n3);
             this.setState({ result: n3, operation: '/' })
         }
         else if (event.target.value === 'Mul')
         {
             n3 = (Number(this.state.value1)) * (Number(this.state.value2));
-            console.log(n3);
+        //    console.log(n3);
             this.setState({ result: n3, operation: '*' })
         }
 
